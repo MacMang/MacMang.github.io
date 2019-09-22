@@ -542,7 +542,438 @@
     
                                 <section class="normal markdown-section">
                                 
-                                
+                                <h1 id="bom">BOM</h1>
+<p>BOM(Browser Object Model),&#x6D4F;&#x89C8;&#x5668;&#x5BF9;&#x8C61;&#x6A21;&#x578B;.&#x5B83;&#x63D0;&#x4F9B;&#x4E86;&#x5F88;&#x591A;&#x5BF9;&#x8C61;.&#x7528;&#x4E8E;&#x8BBF;&#x95EE;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x7684;&#x529F;&#x80FD;.</p>
+<h1 id="window">window</h1>
+<p>window&#x5BF9;&#x8C61;&#x662F;BOM&#x7ED3;&#x6784;&#x7684;&#x6838;&#x5FC3;&#x5BF9;&#x8C61;.&#x5B83;&#x8868;&#x793A;&#x6D4F;&#x89C8;&#x5668;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B;.&#x6807;&#x7B7E;&#x4E4B;&#x95F4;&#x4E0D;&#x4F1A;&#x5171;&#x4EAB;&#x8FD9;&#x4E2A;&#x5B9E;&#x4F8B;.</p>
+<div algin="center">
+    <img src="../images/22.window.png">
+<div>
+
+## window&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;
+&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728;&#x4EE3;&#x7801;&#x91CC;,&#x76F4;&#x63A5;&#x6253;&#x5370; window&#x5BF9;&#x8C61;,
+```javascript
+  console.log(window);
+```
+<div algin="center">
+    <img src="../images/23.window&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;.png">
+</div>
+&#x4ECE;&#x4E0A;&#x56FE;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x770B;&#x51FA;,window&#x5BF9;&#x8C61;&#x6709;&#x975E;&#x5E38;&#x591A;&#x7684;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;.&#x4F46;&#x6211;&#x4EEC;&#x518D;&#x8FD9;&#x91CC;&#x5E76;&#x975E;&#x9700;&#x8981;&#x6BCF;&#x4E2A;&#x90FD;&#x4E86;&#x89E3;,&#x628A;&#x4ED6;&#x4EEC;&#x5206;&#x4E3A;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;&#x6765;&#x5B66;&#x4E60;
+</div>
+
+<h2 id="window&#x5C5E;&#x6027;">window&#x5C5E;&#x6027;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x5C5E;&#x6027;&#x540D;</th>
+<th style="text-align:left">&#x5C5E;&#x6027;&#x503C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>closed</td>
+<td style="text-align:left">&#x5F53;&#x7A97;&#x53E3;&#x5173;&#x95ED;&#x65F6;&#x4E3A;&#x771F;</td>
+</tr>
+<tr>
+<td>defaultStatus</td>
+<td style="text-align:left">defaultStatus &#x5C5E;&#x6027;&#x53EF;&#x8BBE;&#x7F6E;&#x6216;&#x8FD4;&#x56DE;&#x7A97;&#x53E3;&#x72B6;&#x6001;&#x680F;&#x4E2D;&#x7684;&#x9ED8;&#x8BA4;&#x6587;&#x672C;&#x3002;&#x8BE5;&#x5C5E;&#x6027;&#x53EF;&#x8BFB;&#x53EF;&#x5199;</td>
+</tr>
+<tr>
+<td>devicePixelRatio</td>
+<td style="text-align:left"><a href="#devicePixelRatio">&#x8FD4;&#x56DE;&#x5F53;&#x524D;&#x663E;&#x793A;&#x8BBE;&#x5907;&#x7684;&#x7269;&#x7406;&#x50CF;&#x7D20;&#x5206;&#x8FA8;&#x7387;&#x4E0E; CSS &#x50CF;&#x7D20;&#x5206;&#x8FA8;&#x7387;&#x7684;&#x6BD4;&#x7387;</a></td>
+</tr>
+<tr>
+<td>document</td>
+<td style="text-align:left"><a href="#doucment">&#x8FD4;&#x56DE;&#x5BF9;&#x7A97;&#x53E3;&#x4E2D;&#x5305;&#x542B;&#x7684;&#x6587;&#x6863;&#x7684;&#x5F15;&#x7528;&#x3002;</a></td>
+</tr>
+<tr>
+<td>history</td>
+<td style="text-align:left"><a href="#history">&#x5B83;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x63A5;&#x53E3;&#xFF0C;&#x7528;&#x4E8E;&#x64CD;&#x4F5C;&#x6D4F;&#x89C8;&#x5668;&#x4F1A;&#x8BDD;&#x5386;&#x53F2;&#xFF08;&#x5728;&#x5F53;&#x524D;&#x9875;&#x52A0;&#x8F7D;&#x7684;&#x9009;&#x9879;&#x5361;&#x6216;&#x6846;&#x67B6;&#x4E2D;&#x8BBF;&#x95EE;&#x7684;&#x9875;&#x9762;&#xFF09;&#x3002;</a></td>
+</tr>
+<tr>
+<td>innerHeight innerHeight</td>
+<td style="text-align:left"><a href="#innerHeight">&#x8868;&#x793A;&#x6D4F;&#x89C8;&#x5668;&#x7A97;&#x53E3; viewport &#x7684;&#x9AD8;&#x5EA6;&#x548C;&#x5BBD;&#x5EA6;&#xFF08;&#x4EE5;&#x50CF;&#x7D20;&#x4E3A;&#x5355;&#x4F4D;&#xFF09;&#xFF0C;&#x5982;&#x679C;&#x5448;&#x73B0;&#x7684;&#x8BDD;&#xFF0C;&#x5305;&#x62EC;&#x6C34;&#x5E73;&#x6EDA;&#x52A8;&#x6761;</a></td>
+</tr>
+<tr>
+<td>location</td>
+<td style="text-align:left"><a href="#location">&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x6709;&#x5173;&#x6587;&#x6863;&#x7684;&#x5F53;&#x524D;&#x4F4D;&#x7F6E;&#x4FE1;&#x606F;&#x7684; Location &#x5BF9;&#x8C61;&#x3002;</a></td>
+</tr>
+<tr>
+<td>name</td>
+<td style="text-align:left">&#x7528;&#x4E8E;&#x83B7;&#x53D6;&#x6216;&#x8005;&#x8BBE;&#x7F6E; window &#x7684;&#x540D;&#x79F0;&#x3002;</td>
+</tr>
+<tr>
+<td>navigator</td>
+<td style="text-align:left"><a href="#navigator">navigator</a></td>
+</tr>
+<tr>
+<td>outerHeight outerWidth</td>
+<td style="text-align:left"><a href="#outerheight">Window.outerHeight&#x83B7;&#x53D6;&#x6574;&#x4E2A;&#x6D4F;&#x89C8;&#x5668;&#x7A97;&#x53E3;&#x7684;&#x9AD8;&#x5EA6;&#xFF08;&#x4EE5;&#x50CF;&#x7D20;&#x4E3A;&#x5355;&#x4F4D;&#xFF09;&#x3002;&#x5B83;&#x8868;&#x793A;&#x6574;&#x4E2A;&#x6D4F;&#x89C8;&#x5668;&#x7A97;&#x53E3;&#x7684;&#x9AD8;&#x5EA6;&#xFF0C;&#x5305;&#x62EC;&#x8FB9;&#x680F;&#xFF08;&#x5982;&#x679C;&#x5C55;&#x5F00;&#xFF09;&#xFF0C;&#x7A97;&#x53E3;chrome&#x548C;&#x7A97;&#x53E3;&#x5927;&#x5C0F;&#x8FB9;&#x6846;/&#x624B;&#x67C4;&#x3002;</a></td>
+</tr>
+<tr>
+<td>pageXOffset</td>
+<td style="text-align:left"><a href="#pageXOffset">&#x4E00;&#x4E2A;&#x6D6E;&#x70B9;&#x6570;&#xFF0C;&#x7528;&#x4E8E;&#x6307;&#x5B9A;Document&#x5728;&#x5176;&#x5305;&#x542B;Window&#x4E2D;&#x5782;&#x76F4;&#x6EDA;&#x52A8;&#x7684;&#x50CF;&#x7D20;&#x6570;</a></td>
+</tr>
+<tr>
+<td>performance</td>
+<td style="text-align:left">&#x8BE5;&#x5BF9;&#x8C61;&#x53EF;&#x7528;&#x4E8E;&#x6536;&#x96C6;&#x6709;&#x5173;&#x5F53;&#x524D;&#x6587;&#x6863;&#x7684;&#x6027;&#x80FD;&#x4FE1;&#x606F;</td>
+</tr>
+<tr>
+<td>screen</td>
+<td style="text-align:left"><a href="#screen">screen&#x5C5E;&#x6027;&#x8FD4;&#x56DE;&#x5BF9;&#x4E0E;&#x7A97;&#x53E3;&#x5173;&#x8054;&#x7684;&#x5C4F;&#x5E55;&#x5BF9;&#x8C61;&#x7684;&#x5F15;&#x7528;</a></td>
+</tr>
+<tr>
+<td>screenX</td>
+<td style="text-align:left">&#x8BE5;Window.screenX&#x53EA;&#x8BFB;&#x5C5E;&#x6027;&#x8FD4;&#x56DE;&#x4ECE;&#x5C4F;&#x5E55;&#x5DE6;&#x4FA7;&#x7684;&#x7528;&#x6237;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x5DE6;&#x8FB9;&#x6846;&#x7684;&#x6C34;&#x5E73;&#x8DDD;&#x79BB;&#xFF08;&#x4EE5;CSS&#x50CF;&#x7D20;&#x4E3A;&#x5355;&#x4F4D;&#xFF09;&#x3002;</td>
+</tr>
+<tr>
+<td>screenY</td>
+<td style="text-align:left">&#x8BE5;Window.screenY&#x53EA;&#x8BFB;&#x5C5E;&#x6027;&#x8FD4;&#x56DE;&#x4ECE;&#x5C4F;&#x5E55;&#x9876;&#x90E8;&#x8FB9;&#x7F18;&#x7684;&#x7528;&#x6237;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x4E0A;&#x8FB9;&#x6846;&#x7684;&#x5782;&#x76F4;&#x8DDD;&#x79BB;&#xFF08;&#x4EE5;CSS&#x50CF;&#x7D20;&#x4E3A;&#x5355;&#x4F4D;&#xFF09;&#x3002;</td>
+</tr>
+<tr>
+<td>scrollX</td>
+<td style="text-align:left">Window&#x63A5;&#x53E3;&#x7684;&#x53EA;&#x8BFB;scrollX&#x5C5E;&#x6027;&#x53EF;&#x4EE5;&#x8FD4;&#x56DE;&#x6587;&#x6863;&#x5F53;&#x524D;&#x6C34;&#x5E73;&#x6EDA;&#x52A8;&#x7684;&#x50CF;&#x7D20;&#x6570;&#x3002;&#x8FD9;&#x4E2A;&#x503C;&#x5728;&#x73B0;&#x4EE3;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x662F;&#x4E9A;&#x50CF;&#x7D20;&#x7CBE;&#x786E;&#x7684;&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x5B83;&#x4E0D;&#x4E00;&#x5B9A;&#x662F;&#x6574;&#x6570;&#x3002;&#x60A8;&#x53EF;&#x4EE5;&#x4ECE;scrollY&#x5C5E;&#x6027;&#x4E2D;&#x83B7;&#x53D6;&#x6587;&#x6863;&#x5782;&#x76F4;&#x6EDA;&#x52A8;&#x7684;&#x50CF;&#x7D20;&#x6570;&#x3002;</td>
+</tr>
+<tr>
+<td>scrollY</td>
+<td style="text-align:left">Window&#x63A5;&#x53E3;&#x7684;&#x53EA;&#x8BFB;scrollY&#x5C5E;&#x6027;&#x8FD4;&#x56DE;&#x6587;&#x6863;&#x5F53;&#x524D;&#x5782;&#x76F4;&#x6EDA;&#x52A8;&#x7684;&#x50CF;&#x7D20;&#x6570;&#x3002;&#x8FD9;&#x4E2A;&#x503C;&#x5728;&#x73B0;&#x4EE3;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x662F;&#x4E9A;&#x50CF;&#x7D20;&#x7CBE;&#x786E;&#x7684;&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x5B83;&#x4E0D;&#x4E00;&#x5B9A;&#x662F;&#x6574;&#x6570;&#x3002;&#x60A8;&#x53EF;&#x4EE5;&#x4ECE;scrollX&#x5C5E;&#x6027;&#x4E2D;&#x83B7;&#x53D6;&#x6587;&#x6863;&#x6C34;&#x5E73;&#x6EDA;&#x52A8;&#x7684;&#x50CF;&#x7D20;&#x6570;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h1 id="devicePixelRatio"> devicePixelRatio</h1>
+
+<pre><code class="lang-javascript">
+<span class="hljs-keyword">var</span> canvas = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;canvas&apos;</span>);
+<span class="hljs-keyword">var</span> ctx = canvas.getContext(<span class="hljs-string">&apos;2d&apos;</span>);
+
+<span class="hljs-comment">// Set display size (css pixels).</span>
+<span class="hljs-keyword">var</span> size = <span class="hljs-number">200</span>;
+canvas.style.width = size + <span class="hljs-string">&quot;px&quot;</span>;
+canvas.style.height = size + <span class="hljs-string">&quot;px&quot;</span>;
+
+<span class="hljs-comment">// Set actual size in memory (scaled to account for extra pixel density).</span>
+<span class="hljs-keyword">var</span> scale = <span class="hljs-built_in">window</span>.devicePixelRatio; <span class="hljs-comment">// &lt;--- Change to 1 on retina screens to see blurry canvas.</span>
+canvas.width = size * scale;
+canvas.height = size * scale;
+
+<span class="hljs-comment">// Normalize coordinate system to use css pixels.</span>
+ctx.scale(scale, scale);
+
+ctx.fillStyle = <span class="hljs-string">&quot;#bada55&quot;</span>;
+ctx.fillRect(<span class="hljs-number">10</span>, <span class="hljs-number">10</span>, <span class="hljs-number">300</span>, <span class="hljs-number">300</span>);
+ctx.fillStyle = <span class="hljs-string">&quot;#ffffff&quot;</span>;
+ctx.font = <span class="hljs-string">&apos;18px Arial&apos;</span>;
+ctx.textAlign = <span class="hljs-string">&apos;center&apos;</span>;
+ctx.textBaseline = <span class="hljs-string">&apos;middle&apos;</span>;
+
+<span class="hljs-keyword">var</span> x = size / <span class="hljs-number">2</span>;
+<span class="hljs-keyword">var</span> y = size / <span class="hljs-number">2</span>;
+
+<span class="hljs-keyword">var</span> textString = <span class="hljs-string">&quot;I love MDN&quot;</span>;
+ctx.fillText(textString, x, y);
+</code></pre>
+<p><img src="../images/24.devicePixelRatio.png"></p>
+<h1 id="doucment">document</h1>
+
+<pre><code class="lang-javascript">  <span class="hljs-keyword">var</span> doc = <span class="hljs-built_in">window</span>.document;
+   <span class="hljs-built_in">console</span>.log(doc.title); <span class="hljs-comment">// Hello, World!</span>
+</code></pre>
+<h1 id="history">history</h1>
+<p>history &#x5BF9;&#x8C61;&#x662F; window &#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#xFF0C;&#x5B83;&#x4FDD;&#x5B58;&#x7740;&#x7528;&#x6237;&#x4E0A;&#x7F51;&#x7684;&#x8BB0;&#x5F55;&#xFF0C;&#x4ECE;&#x7A97;&#x53E3;&#x88AB;&#x6253;&#x5F00;&#x7684;&#x90A3;&#x4E00;&#x523B;&#x7B97;&#x8D77;</p>
+<pre><code class="lang-javascript"><span class="hljs-built_in">console</span>.log(history);
+history.back();     <span class="hljs-comment">// equivalent to clicking back button</span>
+history.go(<span class="hljs-number">-1</span>);
+</code></pre>
+<h1 id="innerheight">innerHeight</h1>
+<p>innerHeight &#x5C5E;&#x6027;&#x8868;&#x793A;&#x6D4F;&#x89C8;&#x5668;&#x7A97;&#x53E3; viewport &#x7684;&#x9AD8;&#x5EA6;&#xFF08;&#x4EE5;&#x50CF;&#x7D20;&#x4E3A;&#x5355;&#x4F4D;&#xFF09;&#xFF0C;&#x5982;&#x679C;&#x5448;&#x73B0;&#x7684;&#x8BDD;&#xFF0C;&#x5305;&#x62EC;&#x6C34;&#x5E73;&#x6EDA;&#x52A8;&#x6761;</p>
+<pre><code class="lang-javascript"> <span class="hljs-keyword">var</span> width=<span class="hljs-built_in">window</span>.innerWidth,height=<span class="hljs-built_in">window</span>.innerHeight; 
+ <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;width&quot;</span>,width,);
+</code></pre>
+<h1 id="location">location</h1>
+<table>
+<thead>
+<tr>
+<th>&#x5C5E;&#x6027;&#x540D;</th>
+<th style="text-align:left">&#x5C5E;&#x6027;&#x503C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>hash</td>
+<td style="text-align:left">&#x951A;&#x70B9;&#x90E8;&#x5206;</td>
+</tr>
+<tr>
+<td>host</td>
+<td style="text-align:left">&#x4E3B;&#x673A;&#x540D;:&#x7AEF;&#x53E3;&#x53F7;</td>
+</tr>
+<tr>
+<td>hostname</td>
+<td style="text-align:left">&#x4E3B;&#x673A;&#x540D;</td>
+</tr>
+<tr>
+<td>href</td>
+<td style="text-align:left">&#x5B8C;&#x6574;&#x7684;URL</td>
+</tr>
+<tr>
+<td>origin</td>
+<td style="text-align:left">origin&#x5C5E;&#x6027;&#x8FD4;&#x56DE;URL&#x7684;&#x534F;&#x8BAE;&#xFF0C;&#x4E3B;&#x673A;&#x540D;&#x548C;&#x7AEF;&#x53E3;&#x53F7;&#x3002;</td>
+</tr>
+<tr>
+<td>pathname</td>
+<td style="text-align:left">&#x8DEF;&#x7ECF;&#x540D;</td>
+</tr>
+<tr>
+<td>port</td>
+<td style="text-align:left">&#x7AEF;&#x53E3;&#x53F7;</td>
+</tr>
+<tr>
+<td>protocol</td>
+<td style="text-align:left">&#x534F;&#x8BAE;&#x90E8;&#x5206;</td>
+</tr>
+<tr>
+<td>search</td>
+<td style="text-align:left">&#x67E5;&#x8BE2;&#x5B57;&#x7B26;&#x4E32;,url&#x540E;&#x8DDF;&#x7740;?&#x7684;&#x5185;&#x5BB9;</td>
+</tr>
+<tr>
+<td>reload</td>
+<td style="text-align:left">&#x91CD;&#x8F7D;&#x5F53;&#x524D;&#x9875;&#x9762;</td>
+</tr>
+<tr>
+<td>replace</td>
+<td style="text-align:left">&#x7528;&#x65B0;&#x7684;URL&#x66FF;&#x6362;&#x5F53;&#x524D;&#x9875;&#x9762;</td>
+</tr>
+</tbody>
+</table>
+<h1 id="navigator">navigator</h1>
+<table>
+<thead>
+<tr>
+<th>&#x5C5E;&#x6027;&#x540D;</th>
+<th style="text-align:left">&#x5C5E;&#x6027;&#x503C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>appCodeName</td>
+<td style="text-align:left">&#x8FD4;&#x56DE;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x4EE3;&#x7801;&#x540D;&#x3002; &#x51FA;&#x4E8E;&#x517C;&#x5BB9;&#x6027;&#x539F;&#x56E0;&#xFF0C;&#x6240;&#x6709;&#x73B0;&#x4EE3;&#x6D4F;&#x89C8;&#x5668;&#x90FD;&#x8FD4;&#x56DE;&#x201C;Mozilla&#x201D;&#x3002;</td>
+</tr>
+<tr>
+<td>appName</td>
+<td style="text-align:left">&#x8FD4;&#x56DE;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x540D;&#x79F0;&#x3002;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x8868;&#x793A;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x540D;&#x79F0;&#x3002;&#x8FD4;&#x56DE;&#x503C;&#x56E0;&#x6D4F;&#x89C8;&#x5668;&#x800C;&#x5F02;&#xFF1A;IE11&#xFF0C;Firefox&#xFF0C;Chrome&#x548C;Safari&#x8FD4;&#x56DE;&#x201C;Netscape&#x201D;IE 10&#x53CA;&#x66F4;&#x65E9;&#x7248;&#x672C;&#x8FD4;&#x56DE;&#x201C;Microsoft Internet Explorer&#x201D;Opera&#x8FD4;&#x56DE;&#x201C;Opera&#x201D;</td>
+</tr>
+<tr>
+<td>appVersion</td>
+<td style="text-align:left">&#x8FD4;&#x56DE;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x5E73;&#x53F0;&#x548C;&#x7248;&#x672C;&#x4FE1;&#x606F;</td>
+</tr>
+<tr>
+<td>cookieEnabled</td>
+<td style="text-align:left">&#x8FD4;&#x56DE;&#x6307;&#x660E;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x662F;&#x5426;&#x542F;&#x7528; cookie &#x7684;&#x5E03;&#x5C14;&#x503C;&#x3002;</td>
+</tr>
+<tr>
+<td>geolocation</td>
+<td style="text-align:left">&#x8FD4;&#x56DE;&#x53EF;&#x7528;&#x4E8E;&#x5B9A;&#x4F4D;&#x7528;&#x6237;&#x4F4D;&#x7F6E;&#x7684;Geolocation&#x5BF9;&#x8C61;</td>
+</tr>
+<tr>
+<td>platform</td>
+<td style="text-align:left">&#x8FD4;&#x56DE;&#x8FD0;&#x884C;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x5E73;&#x53F0;&#x3002;</td>
+</tr>
+<tr>
+<td>onLine</td>
+<td style="text-align:left">&#x786E;&#x5B9A;&#x6D4F;&#x89C8;&#x5668;&#x662F;&#x5426;&#x5728;&#x7EBF;</td>
+</tr>
+<tr>
+<td>product</td>
+<td style="text-align:left">&#x8FD4;&#x56DE;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x5F15;&#x64CE;&#x540D;&#x79F0;</td>
+</tr>
+<tr>
+<td>userAgent</td>
+<td style="text-align:left">userAgent&#x5C5E;&#x6027;&#x8FD4;&#x56DE;&#x6D4F;&#x89C8;&#x5668;&#x53D1;&#x9001;&#x7ED9;&#x670D;&#x52A1;&#x5668;&#x7684;user-agent&#x6807;&#x5934;&#x7684;&#x503C;&#x3002;&#x8FD4;&#x56DE;&#x7684;&#x503C;&#x5305;&#x542B;&#x6709;&#x5173;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x540D;&#x79F0;&#xFF0C;&#x7248;&#x672C;&#x548C;&#x5E73;&#x53F0;&#x7684;&#x4FE1;&#x606F;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> txt = <span class="hljs-string">&quot;&quot;</span>;
+txt += <span class="hljs-string">&quot;&lt;p&gt;Browser CodeName: &quot;</span> + navigator.appCodeName + <span class="hljs-string">&quot;&lt;/p&gt;&quot;</span>;
+txt += <span class="hljs-string">&quot;&lt;p&gt;Browser Name: &quot;</span> + navigator.appName + <span class="hljs-string">&quot;&lt;/p&gt;&quot;</span>;
+txt += <span class="hljs-string">&quot;&lt;p&gt;Browser Version: &quot;</span> + navigator.appVersion + <span class="hljs-string">&quot;&lt;/p&gt;&quot;</span>;
+txt += <span class="hljs-string">&quot;&lt;p&gt;Cookies Enabled: &quot;</span> + navigator.cookieEnabled + <span class="hljs-string">&quot;&lt;/p&gt;&quot;</span>;
+txt += <span class="hljs-string">&quot;&lt;p&gt;Browser Language: &quot;</span> + navigator.language + <span class="hljs-string">&quot;&lt;/p&gt;&quot;</span>;
+txt += <span class="hljs-string">&quot;&lt;p&gt;Browser Online: &quot;</span> + navigator.onLine + <span class="hljs-string">&quot;&lt;/p&gt;&quot;</span>;
+txt += <span class="hljs-string">&quot;&lt;p&gt;Platform: &quot;</span> + navigator.platform + <span class="hljs-string">&quot;&lt;/p&gt;&quot;</span>;
+txt += <span class="hljs-string">&quot;&lt;p&gt;User-agent header: &quot;</span> + navigator.userAgent + <span class="hljs-string">&quot;&lt;/p&gt;&quot;</span>;
+</code></pre>
+<p>&#x6D4F;&#x89C8;&#x5668;&#x68C0;&#x6D4B;&#x5E76;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> sBrowser, sUsrAg = navigator.userAgent;
+
+<span class="hljs-keyword">if</span>(sUsrAg.indexOf(<span class="hljs-string">&quot;Chrome&quot;</span>) &gt; <span class="hljs-number">-1</span>) {
+    sBrowser = <span class="hljs-string">&quot;Google Chrome&quot;</span>;
+} <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (sUsrAg.indexOf(<span class="hljs-string">&quot;Safari&quot;</span>) &gt; <span class="hljs-number">-1</span>) {
+    sBrowser = <span class="hljs-string">&quot;Apple Safari&quot;</span>;
+} <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (sUsrAg.indexOf(<span class="hljs-string">&quot;Opera&quot;</span>) &gt; <span class="hljs-number">-1</span>) {
+    sBrowser = <span class="hljs-string">&quot;Opera&quot;</span>;
+} <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (sUsrAg.indexOf(<span class="hljs-string">&quot;Firefox&quot;</span>) &gt; <span class="hljs-number">-1</span>) {
+    sBrowser = <span class="hljs-string">&quot;Mozilla Firefox&quot;</span>;
+} <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (sUsrAg.indexOf(<span class="hljs-string">&quot;MSIE&quot;</span>) &gt; <span class="hljs-number">-1</span>) {
+    sBrowser = <span class="hljs-string">&quot;Microsoft Internet Explorer&quot;</span>;
+}
+
+alert(<span class="hljs-string">&quot;You are using: &quot;</span> + sBrowser);
+</code></pre>
+<h1 id="outerheight">outerheight</h1>
+<p>Window.outerHeight&#x83B7;&#x53D6;&#x6574;&#x4E2A;&#x6D4F;&#x89C8;&#x5668;&#x7A97;&#x53E3;&#x7684;&#x9AD8;&#x5EA6;&#xFF08;&#x4EE5;&#x50CF;&#x7D20;&#x4E3A;&#x5355;&#x4F4D;&#xFF09;&#x3002;&#x5B83;&#x8868;&#x793A;&#x6574;&#x4E2A;&#x6D4F;&#x89C8;&#x5668;&#x7A97;&#x53E3;&#x7684;&#x9AD8;&#x5EA6;&#xFF0C;&#x5305;&#x62EC;&#x8FB9;&#x680F;&#xFF08;&#x5982;&#x679C;&#x5C55;&#x5F00;&#xFF09;&#xFF0C;&#x7A97;&#x53E3;chrome&#x548C;&#x7A97;&#x53E3;&#x5927;&#x5C0F;&#x8FB9;&#x6846;/&#x624B;&#x67C4;&#x3002;</p>
+<h1 id="outerwidth">outerWidth</h1>
+<p>Window.outerWidth&#x53EF;&#x4EE5;&#x83B7;&#x53D6;&#x6D4F;&#x89C8;&#x5668;&#x7A97;&#x53E3;&#x5916;&#x90E8;&#x7684;&#x5BBD;&#x5EA6;&#x3002;&#x5B83;&#x8868;&#x793A;&#x6574;&#x4E2A;&#x6D4F;&#x89C8;&#x5668;&#x7A97;&#x53E3;&#x7684;&#x5BBD;&#x5EA6;&#xFF0C;&#x5305;&#x62EC;&#x8FB9;&#x680F;&#xFF08;&#x5982;&#x679C;&#x5C55;&#x5F00;&#xFF09;&#xFF0C;&#x7A97;&#x53E3;chrome&#x548C;&#x7A97;&#x53E3;&#x5927;&#x5C0F;&#x8FB9;&#x6846;/&#x624B;&#x67C4;&#x3002;</p>
+<p>&#x6B64;&#x5C5E;&#x6027;&#x662F;&#x53EA;&#x8BFB;&#x7684;&#xFF1B;&#x5B83;&#x6CA1;&#x6709;&#x9ED8;&#x8BA4;&#x503C;</p>
+<h1 id="pagexoffset">pageXOffset</h1>
+<p>Window&#x7684;&#x53EA;&#x8BFB;&#x5C5E;&#x6027;pageYOffset&#x662F;scrollY&#x7684;&#x4E00;&#x4E2A;&#x522B;&#x540D;&#xFF0C;&#x56E0;&#x6B64;&#xFF0C;&#x5B83;&#x4F1A;&#x8FD4;&#x56DE;&#x6587;&#x6863;&#x5F53;&#x524D;&#x6CBF;&#x5782;&#x76F4;&#x8F74;&#xFF08;&#x5373;&#x5411;&#x4E0A;&#x6216;&#x5411;&#x4E0B;&#xFF09;&#x6EDA;&#x52A8;&#x7684;&#x50CF;&#x7D20;&#x6570;&#xFF0C;&#x5176;&#x503C;&#x4E3A;0.0&#xFF0C;&#x8868;&#x793A;&#x8BE5;Document&#x7684;&#x9876;&#x90E8;&#x8FB9;&#x7F18;&#x5F53;&#x524D;&#x4E0E;&#x7A97;&#x53E3;&#x5185;&#x5BB9;&#x533A;&#x57DF;&#x7684;&#x9876;&#x90E8;&#x8FB9;&#x7F18;&#x5BF9;&#x9F50;&#x3002; </p>
+<p>&#x5BF9; pageYOffset &#x7684;&#x652F;&#x6301;&#x6BD4;&#x5BF9;&#x65E7;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x7684;scrollY&#x7A0D;&#x597D;&#x4E00;&#x4E9B;&#xFF0C;&#x4F46;&#x5982;&#x679C;&#x60A8;&#x4E0D;&#x5173;&#x5FC3;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5176;&#x4E2D;&#x4E00;&#x79CD;&#x3002;</p>
+<p>&#x76F8;&#x5E94;&#x7684;pageXOffset&#x5C5E;&#x6027;&#x8FD4;&#x56DE;&#x6CBF;&#x6C34;&#x5E73;&#x8F74;&#xFF08;&#x5DE6;&#x548C;&#x53F3;&#xFF09;&#x6EDA;&#x52A8;&#x7684;&#x50CF;&#x7D20;&#x6570;&#xFF0C;&#x662F;scrollX&#x7684;&#x522B;&#x540D;&#x3002;</p>
+<h1 id="screen">screen</h1>
+<p>screen&#x5C5E;&#x6027;&#x8FD4;&#x56DE;&#x5BF9;&#x4E0E;&#x7A97;&#x53E3;&#x5173;&#x8054;&#x7684;&#x5C4F;&#x5E55;&#x5BF9;&#x8C61;&#x7684;&#x5F15;&#x7528;&#x3002;&#x5B9E;&#x73B0;Screen&#x63A5;&#x53E3;&#x7684;screen&#x5BF9;&#x8C61;&#x662F;&#x4E00;&#x4E2A;&#x7279;&#x6B8A;&#x5BF9;&#x8C61;&#xFF0C;&#x7528;&#x4E8E;&#x68C0;&#x67E5;&#x6B63;&#x5728;&#x5448;&#x73B0;&#x5F53;&#x524D;&#x7A97;&#x53E3;&#x7684;&#x5C4F;&#x5E55;&#x7684;&#x5C5E;&#x6027;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>&#x5C5E;&#x6027;&#x540D;</th>
+<th style="text-align:left">&#x5C5E;&#x6027;&#x503C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>availHeight</td>
+<td style="text-align:left">&#x8FD4;&#x56DE;&#x6D4F;&#x89C8;&#x5668;&#x7A97;&#x53E3;&#x5728;&#x5C4F;&#x5E55;&#x4E0A;&#x53EF;&#x5360;&#x7528;&#x7684;&#x5782;&#x76F4;&#x7A7A;&#x95F4;&#xFF0C;&#x5373;&#x6700;&#x5927;&#x9AD8;&#x5EA6;&#x3002;</td>
+</tr>
+<tr>
+<td>availLeft</td>
+<td style="text-align:left">&#x8FD4;&#x56DE;&#x6D4F;&#x89C8;&#x5668;&#x53EF;&#x7528;&#x7A7A;&#x95F4;&#x5DE6;&#x8FB9;&#x8DDD;&#x79BB;&#x5C4F;&#x5E55;&#xFF08;&#x7CFB;&#x7EDF;&#x684C;&#x9762;&#xFF09;&#x5DE6;&#x8FB9;&#x754C;&#x7684;&#x8DDD;&#x79BB;</td>
+</tr>
+<tr>
+<td>availTop</td>
+<td style="text-align:left">&#x6D4F;&#x89C8;&#x5668;&#x7A97;&#x53E3;&#x5728;&#x5C4F;&#x5E55;&#x4E0A;&#x7684;&#x53EF;&#x5360;&#x7528;&#x7A7A;&#x95F4;&#x4E0A;&#x8FB9;&#x8DDD;&#x79BB;&#x5C4F;&#x5E55;&#x4E0A;&#x8FB9;&#x754C;&#x7684;&#x50CF;&#x7D20;&#x503C;&#x3002;</td>
+</tr>
+<tr>
+<td>availWidth</td>
+<td style="text-align:left">&#x6D4F;&#x89C8;&#x5668;&#x7A97;&#x53E3;&#x53EF;&#x5360;&#x7528;&#x7684;&#x6C34;&#x5E73;&#x5BBD;&#x5EA6;</td>
+</tr>
+<tr>
+<td>colorDepth</td>
+<td style="text-align:left">&#x5C5E;&#x6027;&#x8FD4;&#x56DE;&#x76EE;&#x6807;&#x8BBE;&#x5907;&#x6216;&#x7F13;&#x51B2;&#x5668;&#x4E0A;&#x7684;&#x8C03;&#x8272;&#x677F;&#x7684;&#x6BD4;&#x7279;&#x6DF1;&#x5EA6;&#x3002;</td>
+</tr>
+<tr>
+<td>height</td>
+<td style="text-align:left">height&#x8FD4;&#x56DE;&#x5C4F;&#x5E55;&#x7684;&#x9AD8;&#x5EA6;,&#x6CE8;&#x610F;&#xFF0C;&#x8BE5;&#x5C5E;&#x6027;&#x8FD4;&#x56DE;&#x7684;&#x9AD8;&#x5EA6;&#x503C;&#x5E76;&#x4E0D;&#x662F;&#x5168;&#x90E8;&#x5BF9;&#x6D4F;&#x89C8;&#x5668;&#x7A97;&#x53E3;&#x53EF;&#x7528;&#x3002;&#x5C0F;&#x5DE5;&#x5177;&#xFF08;Widgets&#xFF09;&#xFF0C;&#x5982;&#x4EFB;&#x52A1;&#x680F;&#x6216;&#x5176;&#x4ED6;&#x7279;&#x6B8A;&#x7684;&#x7A0B;&#x5E8F;&#x7A97;&#x53E3;&#xFF0C;&#x53EF;&#x80FD;&#x4F1A;&#x51CF;&#x5C11;&#x6D4F;&#x89C8;&#x5668;&#x7A97;&#x53E3;&#x548C;&#x5176;&#x4ED6;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x80FD;&#x591F;&#x5229;&#x7528;&#x7684;&#x7A7A;&#x95F4;&#x3002;</td>
+</tr>
+<tr>
+<td>orientation</td>
+<td style="text-align:left">&#x8868;&#x793A;&#x5F53;&#x524D;&#x5C4F;&#x5E55;&#x662F;&#x6A2A;&#x5C4F;&#xFF08;landscape-primary&#xFF09;&#x8FD8;&#x662F;&#x7AD6;&#x5C4F;&#xFF08;portrait-primary&#xFF09;&#x3002;&#x53EA;&#x8BFB;&#x5C5E;&#x6027;&#x3002;orientation.type&#x8FD8;&#x6709;&#x4E24;&#x4E2A;&#x503C;landscape-secondary&#x548C;portrait &#x2013;secondary&#x3002;&#x503C;portrait-secondary&#x5C06;&#x6A2A;&#x5C4F;&#x6A21;&#x5F0F;&#x65CB;&#x8F6C;180&#xB0;</td>
+</tr>
+<tr>
+<td>pixelDepth</td>
+<td style="text-align:left">&#x8FD4;&#x56DE;&#x5C4F;&#x5E55;&#x7684;&#x4F4D;&#x6DF1;&#x5EA6;/&#x8272;&#x5F69;&#x6DF1;&#x5EA6;&#xFF08;bit depth&#xFF09;&#x3002;&#x6839;&#x636E;CSSOM( CSS&#x5BF9;&#x8C61;&#x6A21;&#x578B; )&#x89C6;&#x56FE;&#xFF0C;&#x4E3A;&#x517C;&#x5BB9;&#x8D77;&#x89C1;&#xFF0C;&#x8BE5;&#x503C;&#x603B;&#x4E3A;24&#x3002;</td>
+</tr>
+<tr>
+<td>width</td>
+<td style="text-align:left">1440</td>
+</tr>
+</tbody>
+</table>
+<h1 id="window-&#x65B9;&#x6CD5;">window &#x65B9;&#x6CD5;</h1>
+<table>
+<thead>
+<tr>
+<th>&#x65B9;&#x6CD5;&#x540D;</th>
+<th style="text-align:left">&#x4F5C;&#x7528;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>alert</td>
+<td style="text-align:left">&#x8BE5;Window.alert()&#x65B9;&#x6CD5;&#x663E;&#x793A;&#x5E26;&#x6709;&#x53EF;&#x9009;&#x6307;&#x5B9A;&#x5185;&#x5BB9;&#x7684;&#x8B66;&#x544A;&#x5BF9;&#x8BDD;&#x6846;&#x548C;OK&#x6309;&#x94AE;&#x3002;</td>
+</tr>
+<tr>
+<td>confirm</td>
+<td style="text-align:left">&#x5F39;&#x51FA;&#x786E;&#x8BA4;&#x6846;,&#x5E76;&#x4E14;&#x5E26;&#x6709;&#x53D6;&#x6D88;&#x6309;&#x94AE;</td>
+</tr>
+<tr>
+<td>prompt</td>
+<td style="text-align:left">&#x5E26;&#x8F93;&#x5165;&#x6846;&#x7684;&#x5F39;&#x6846;</td>
+</tr>
+<tr>
+<td>resizeTo</td>
+<td style="text-align:left">&#x52A8;&#x6001;&#x8C03;&#x6574;&#x7A97;&#x53E3;&#x5927;&#x5C0F;</td>
+</tr>
+<tr>
+<td>scrollTo</td>
+<td style="text-align:left">&#x53EF;&#x4EE5;&#x6EDA;&#x52A8;&#x5230;&#x6587;&#x6863;&#x4E2D;&#x7684;&#x4E00;&#x7EC4;&#x7279;&#x5B9A;&#x5750;&#x6807;&#x3002;</td>
+</tr>
+<tr>
+<td>close</td>
+<td style="text-align:left">&#x5173;&#x95ED;&#x6D4F;&#x89C8;&#x5668;</td>
+</tr>
+<tr>
+<td>setTimeout</td>
+<td style="text-align:left">&#x5EF6;&#x65F6;&#x5668;</td>
+</tr>
+<tr>
+<td>clearTimeout</td>
+<td style="text-align:left">&#x6E05;&#x9664;&#x5EF6;&#x65F6;&#x5668;</td>
+</tr>
+<tr>
+<td>setInterval</td>
+<td style="text-align:left">&#x5B9A;&#x65F6;&#x5668;</td>
+</tr>
+<tr>
+<td>clearInterval</td>
+<td style="text-align:left">&#x6E05;&#x9664;&#x5B9A;&#x65F6;&#x5668;</td>
+</tr>
+<tr>
+<td>requestAnimationFrame</td>
+<td style="text-align:left">&#x65B9;&#x6CD5;&#x544A;&#x8BC9;&#x6D4F;&#x89C8;&#x5668;&#x60A8;&#x5E0C;&#x671B;&#x6267;&#x884C;&#x52A8;&#x753B;&#xFF0C;&#x5E76;&#x8BF7;&#x6C42;&#x6D4F;&#x89C8;&#x5668;&#x8C03;&#x7528;&#x6307;&#x5B9A;&#x7684;&#x51FD;&#x6570;&#x4EE5;&#x5728;&#x4E0B;&#x6B21;&#x91CD;&#x7ED8;&#x4E4B;&#x524D;&#x66F4;&#x65B0;&#x52A8;&#x753B;&#x3002;&#x8BE5;&#x65B9;&#x6CD5;&#x5C06;&#x56DE;&#x8C03;&#x4F5C;&#x4E3A;&#x5728;&#x91CD;&#x7ED8;&#x4E4B;&#x524D;&#x8C03;&#x7528;&#x7684;&#x53C2;&#x6570;&#x3002;</td>
+</tr>
+<tr>
+<td>cancelAnimationFrame</td>
+<td style="text-align:left">&#x7528;&#x4E8E;&#x53D6;&#x6D88;&#x4EE5;&#x524D;&#x901A;&#x8FC7;&#x5BF9;window.requestAnimationFrame()&#x7684;&#x8C03;&#x7528;&#x8BA1;&#x5212;&#x7684;&#x52A8;&#x753B;&#x5E27;&#x8BF7;&#x6C42;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h1 id="requestanimationframe">requestAnimationFrame</h1>
+<p>&#x8BE5;window.requestAnimationFrame()&#x65B9;&#x6CD5;&#x544A;&#x8BC9;&#x6D4F;&#x89C8;&#x5668;&#x60A8;&#x5E0C;&#x671B;&#x6267;&#x884C;&#x52A8;&#x753B;&#xFF0C;&#x5E76;&#x8BF7;&#x6C42;&#x6D4F;&#x89C8;&#x5668;&#x8C03;&#x7528;&#x6307;&#x5B9A;&#x7684;&#x51FD;&#x6570;&#x4EE5;&#x5728;&#x4E0B;&#x6B21;&#x91CD;&#x7ED8;&#x4E4B;&#x524D;&#x66F4;&#x65B0;&#x52A8;&#x753B;&#x3002;&#x8BE5;&#x65B9;&#x6CD5;&#x5C06;&#x56DE;&#x8C03;&#x4F5C;&#x4E3A;&#x5728;&#x91CD;&#x7ED8;&#x4E4B;&#x524D;&#x8C03;&#x7528;&#x7684;&#x53C2;&#x6570;&#x3002;</p>
+<p>&#x53EA;&#x8981;&#x60A8;&#x51C6;&#x5907;&#x597D;&#x5728;&#x5C4F;&#x5E55;&#x4E0A;&#x66F4;&#x65B0;&#x52A8;&#x753B;&#xFF0C;&#x5C31;&#x5E94;&#x8BE5;&#x8C03;&#x7528;&#x6B64;&#x65B9;&#x6CD5;&#x3002;&#x8FD9;&#x5C06;&#x8BF7;&#x6C42;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x6267;&#x884C;&#x4E0B;&#x4E00;&#x6B21;&#x91CD;&#x7ED8;&#x4E4B;&#x524D;&#x8C03;&#x7528;&#x60A8;&#x7684;&#x52A8;&#x753B;&#x51FD;&#x6570;&#x3002;&#x56DE;&#x8C03;&#x6B21;&#x6570;&#x901A;&#x5E38;&#x4E3A;&#x6BCF;&#x79D2;60&#x6B21;&#xFF0C;&#x4F46;&#x6839;&#x636E;W3C&#x5EFA;&#x8BAE;&#xFF0C;&#x901A;&#x5E38;&#x4F1A;&#x4E0E;&#x5927;&#x591A;&#x6570;Web&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x7684;&#x663E;&#x793A;&#x5237;&#x65B0;&#x7387;&#x76F8;&#x5339;&#x914D;&#x3002;&#x5F53;&#x5728;&#x540E;&#x53F0;&#x9009;&#x9879;&#x5361;&#x6216;&#x9690;&#x85CF;&#x7684;iframe&#x4E2D;&#x8FD0;&#x884C;&#x65F6;&#xFF0C;&#x5927;&#x591A;&#x6570;&#x6D4F;&#x89C8;&#x5668;&#x90FD;&#x4F1A;&#x6682;&#x505C;&#x8C03;&#x7528;requestAnimationFrame()&#xFF0C;&#x4EE5;&#x63D0;&#x9AD8;&#x6027;&#x80FD;&#x548C;&#x5EF6;&#x957F;&#x7535;&#x6C60;&#x5BFF;&#x547D;&#x3002;</p>
+<pre><code class="lang-javascript">
+<span class="hljs-keyword">var</span> start = <span class="hljs-literal">null</span>;
+<span class="hljs-keyword">var</span> element = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;SomeElementYouWantToAnimate&apos;</span>);
+element.style.position = <span class="hljs-string">&apos;absolute&apos;</span>;
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">step</span>(<span class="hljs-params">timestamp</span>) </span>{
+  <span class="hljs-keyword">if</span> (!start) start = timestamp;
+  <span class="hljs-keyword">var</span> progress = timestamp - start;
+  element.style.left = <span class="hljs-built_in">Math</span>.min(progress / <span class="hljs-number">10</span>, <span class="hljs-number">200</span>) + <span class="hljs-string">&apos;px&apos;</span>;
+  <span class="hljs-keyword">if</span> (progress &lt; <span class="hljs-number">2000</span>) {
+    <span class="hljs-built_in">window</span>.requestAnimationFrame(step);
+  }
+}
+<span class="hljs-built_in">window</span>.requestAnimationFrame(step);
+</code></pre>
+<h1 id="cancelanimationframe">cancelAnimationFrame</h1>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> requestAnimationFrame = <span class="hljs-built_in">window</span>.requestAnimationFrame || <span class="hljs-built_in">window</span>.mozRequestAnimationFrame ||
+                            <span class="hljs-built_in">window</span>.webkitRequestAnimationFrame || <span class="hljs-built_in">window</span>.msRequestAnimationFrame;
+
+<span class="hljs-keyword">var</span> cancelAnimationFrame = <span class="hljs-built_in">window</span>.cancelAnimationFrame || <span class="hljs-built_in">window</span>.mozCancelAnimationFrame;
+
+<span class="hljs-keyword">var</span> start = <span class="hljs-built_in">window</span>.mozAnimationStartTime;  <span class="hljs-comment">// Only supported in FF. Other browsers can use something like Date.now().</span>
+
+<span class="hljs-keyword">var</span> myReq;
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">step</span>(<span class="hljs-params">timestamp</span>) </span>{
+  <span class="hljs-keyword">var</span> progress = timestamp - start;
+  d.style.left = <span class="hljs-built_in">Math</span>.min(progress / <span class="hljs-number">10</span>, <span class="hljs-number">200</span>) + <span class="hljs-string">&apos;px&apos;</span>;
+  <span class="hljs-keyword">if</span> (progress &lt; <span class="hljs-number">2000</span>) {
+    myReq = requestAnimationFrame(step);
+  }
+}
+myReq = requestAnimationFrame(step);
+
+cancelAnimationFrame(myReq);
+</code></pre>
+</div>
                                 
                                 </section>
                             
@@ -585,7 +1016,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"05.BOM对象","level":"1.3.5","depth":2,"next":{"title":"06.DOM对象","level":"1.3.6","depth":2,"path":"进阶/06.DOM对象.md","ref":"进阶/06.DOM对象.md","articles":[]},"previous":{"title":"04.原型对象","level":"1.3.4","depth":2,"path":"进阶/04.原型对象.md","ref":"进阶/04.原型对象.md","articles":[]},"dir":"neutral"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"进阶/05.BOM对象.md","mtime":"2019-09-01T00:47:55.764Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-18T02:37:30.160Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"05.BOM对象","level":"1.3.5","depth":2,"next":{"title":"06.DOM对象","level":"1.3.6","depth":2,"path":"进阶/06.DOM对象.md","ref":"进阶/06.DOM对象.md","articles":[]},"previous":{"title":"04.原型对象","level":"1.3.4","depth":2,"path":"进阶/04.原型对象.md","ref":"进阶/04.原型对象.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"进阶/05.BOM对象.md","mtime":"2019-09-19T00:25:32.778Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-19T00:25:40.873Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
