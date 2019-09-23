@@ -542,7 +542,197 @@
     
                                 <section class="normal markdown-section">
                                 
-                                
+                                <h1 id="&#x6570;&#x636E;&#x4F20;&#x9012;&#x65B9;&#x5F0F;">&#x6570;&#x636E;&#x4F20;&#x9012;&#x65B9;&#x5F0F;</h1>
+<p>&#x5728;js&#x4E2D;,&#x76EE;&#x524D;&#x4E3B;&#x6D41;&#x7684;&#x4F20;&#x8F93;&#x683C;&#x5F0F;&#x6709;&#x4E09;&#x79CD;:</p>
+<ol>
+<li>&#x6587;&#x672C;&#x6570;&#x636E;&#x683C;&#x5F0F;</li>
+<li>xml&#x6570;&#x636E;&#x683C;&#x5F0F;</li>
+<li>JSON&#x6570;&#x636E;&#x683C;&#x5F0F;</li>
+</ol>
+<h1 id="&#x6587;&#x672C;&#x4F20;&#x8F93;&#x683C;&#x5F0F;">&#x6587;&#x672C;&#x4F20;&#x8F93;&#x683C;&#x5F0F;</h1>
+<p>  &#x5C06;&#x6570;&#x636E;&#x4EE5;&#x7EAF;&#x6587;&#x672C;&#x7684;&#x683C;&#x5F0F;&#x4F20;&#x9012;&#x7ED9;&#x7528;&#x6237;.</p>
+<h1 id="xml&#x4F20;&#x8F93;&#x683C;&#x5F0F;">xml&#x4F20;&#x8F93;&#x683C;&#x5F0F;</h1>
+<ul>
+<li>XML &#x6307;&#x53EF;&#x6269;&#x5C55;&#x6807;&#x8BB0;&#x8BED;&#x8A00;&#xFF08;eXtensible Markup Language&#xFF09;&#x3002;</li>
+<li>XML &#x662F;&#x4E00;&#x79CD;&#x5F88;&#x50CF;HTML&#x7684;&#x6807;&#x8BB0;&#x8BED;&#x8A00;&#x3002;</li>
+<li>XML &#x7684;&#x8BBE;&#x8BA1;&#x5B97;&#x65E8;&#x662F;&#x4F20;&#x8F93;&#x6570;&#x636E;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x663E;&#x793A;&#x6570;&#x636E;&#x3002;</li>
+<li>XML &#x6807;&#x7B7E;&#x6CA1;&#x6709;&#x88AB;&#x9884;&#x5B9A;&#x4E49;&#x3002;&#x60A8;&#x9700;&#x8981;&#x81EA;&#x884C;&#x5B9A;&#x4E49;&#x6807;&#x7B7E;&#x3002;</li>
+<li>XML &#x88AB;&#x8BBE;&#x8BA1;&#x4E3A;&#x5177;&#x6709;&#x81EA;&#x6211;&#x63CF;&#x8FF0;&#x6027;&#x3002;</li>
+<li>XML &#x662F; W3C &#x7684;&#x63A8;&#x8350;&#x6807;&#x51C6;&#x3002;<h1 id="xml&#x8BED;&#x6CD5;&#x58F0;&#x660E;">xml&#x8BED;&#x6CD5;&#x58F0;&#x660E;</h1>
+</li>
+</ul>
+<pre><code class="lang-xml"><span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;UTF-8&quot;</span><span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<h1 id="xml&#x793A;&#x4F8B;">xml&#x793A;&#x4F8B;</h1>
+<pre><code class="lang-xml"><span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;UTF-8&quot;</span><span class="hljs-meta">?&gt;</span></span>
+<span class="hljs-tag">&lt;<span class="hljs-name">bookstore</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">book</span> <span class="hljs-attr">category</span>=<span class="hljs-string">&quot;COOKING&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">title</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>Everyday Italian<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">author</span>&gt;</span>Giada De Laurentiis<span class="hljs-tag">&lt;/<span class="hljs-name">author</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">year</span>&gt;</span>2005<span class="hljs-tag">&lt;/<span class="hljs-name">year</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">price</span>&gt;</span>30.00<span class="hljs-tag">&lt;/<span class="hljs-name">price</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">book</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">book</span> <span class="hljs-attr">category</span>=<span class="hljs-string">&quot;CHILDREN&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">title</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>Harry Potter<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">author</span>&gt;</span>J K. Rowling<span class="hljs-tag">&lt;/<span class="hljs-name">author</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">year</span>&gt;</span>2005<span class="hljs-tag">&lt;/<span class="hljs-name">year</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">price</span>&gt;</span>29.99<span class="hljs-tag">&lt;/<span class="hljs-name">price</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">book</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">book</span> <span class="hljs-attr">category</span>=<span class="hljs-string">&quot;WEB&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">title</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>Learning XML<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">author</span>&gt;</span>Erik T. Ray<span class="hljs-tag">&lt;/<span class="hljs-name">author</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">year</span>&gt;</span>2003<span class="hljs-tag">&lt;/<span class="hljs-name">year</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">price</span>&gt;</span>39.95<span class="hljs-tag">&lt;/<span class="hljs-name">price</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">book</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">bookstore</span>&gt;</span>
+</code></pre>
+<h1 id="&#x5728;html&#x4E2D;&#x89E3;&#x6790;xml">&#x5728;html&#x4E2D;&#x89E3;&#x6790;xml</h1>
+<p>xml&#x6587;&#x4EF6;</p>
+<pre><code class="lang-xml"><span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;UTF-8&quot;</span><span class="hljs-meta">?&gt;</span></span>
+<span class="hljs-tag">&lt;<span class="hljs-name">note</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">to</span>&gt;</span>Tove<span class="hljs-tag">&lt;/<span class="hljs-name">to</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">from</span>&gt;</span>Jani<span class="hljs-tag">&lt;/<span class="hljs-name">from</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">heading</span>&gt;</span>Reminder<span class="hljs-tag">&lt;/<span class="hljs-name">heading</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>Don&apos;t forget me this weekend!<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">note</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-html">    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>W3Schools Internal Note<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>To:<span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;to&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>From:<span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;from&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>Message:<span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;message&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+        <span class="hljs-keyword">if</span> (<span class="hljs-built_in">window</span>.XMLHttpRequest) { <span class="hljs-comment">// code for IE7+, Firefox, Chrome, Opera, Safari</span>
+            xmlhttp = <span class="hljs-keyword">new</span> XMLHttpRequest();
+        } <span class="hljs-keyword">else</span> { <span class="hljs-comment">// code for IE6, IE5</span>
+            xmlhttp = <span class="hljs-keyword">new</span> ActiveXObject(<span class="hljs-string">&quot;Microsoft.XMLHTTP&quot;</span>);
+        }
+        xmlhttp.open(<span class="hljs-string">&quot;GET&quot;</span>, <span class="hljs-string">&quot;text.xml&quot;</span>, <span class="hljs-literal">false</span>);
+        xmlhttp.send();
+        xmlDoc = xmlhttp.responseXML;
+
+        <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&quot;to&quot;</span>).innerHTML =
+            xmlDoc.getElementsByTagName(<span class="hljs-string">&quot;to&quot;</span>)[<span class="hljs-number">0</span>].childNodes[<span class="hljs-number">0</span>].nodeValue;
+        <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&quot;from&quot;</span>).innerHTML =
+            xmlDoc.getElementsByTagName(<span class="hljs-string">&quot;from&quot;</span>)[<span class="hljs-number">0</span>].childNodes[<span class="hljs-number">0</span>].nodeValue;
+        <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&quot;message&quot;</span>).innerHTML =
+            xmlDoc.getElementsByTagName(<span class="hljs-string">&quot;body&quot;</span>)[<span class="hljs-number">0</span>].childNodes[<span class="hljs-number">0</span>].nodeValue;
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<p>&#x4F18;&#x70B9;:</p>
+<ol>
+<li>&#x683C;&#x5F0F;&#x7EDF;&#x4E00;, &#x7B26;&#x5408;&#x6807;&#x51C6;</li>
+<li>&#x5BB9;&#x6613;&#x4E0E;&#x5176;&#x4ED6;&#x7CFB;&#x7EDF;&#x8FDB;&#x884C;&#x8FDC;&#x7A0B;&#x4EA4;&#x4E92;, &#x6570;&#x636E;&#x5171;&#x4EAB;&#x6BD4;&#x8F83;&#x65B9;&#x4FBF;</li>
+</ol>
+<p>&#x7F3A;&#x70B9;:</p>
+<ol>
+<li>XML&#x6587;&#x4EF6;&#x683C;&#x5F0F;&#x6587;&#x4EF6;&#x5E9E;&#x5927;, &#x683C;&#x5F0F;&#x590D;&#x6742;, &#x4F20;&#x8F93;&#x5360;&#x7528;&#x5E26;&#x5BBD;</li>
+<li>&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x548C;&#x5BA2;&#x6237;&#x7AEF;&#x90FD;&#x9700;&#x8981;&#x82B1;&#x8D39;&#x5927;&#x91CF;&#x4EE3;&#x7801;&#x6765;&#x89E3;&#x6790;XML, &#x4E0D;&#x8BBA;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x548C;&#x5BA2;&#x6237;&#x7AEF;&#x4EE3;&#x7801;&#x53D8;&#x7684;&#x5F02;&#x5E38;&#x590D;&#x6742;&#x548C;&#x4E0D;&#x5BB9;&#x6613;&#x7EF4;&#x62A4;</li>
+<li>&#x5BA2;&#x6237;&#x7AEF;&#x4E0D;&#x540C;&#x6D4F;&#x89C8;&#x5668;&#x4E4B;&#x95F4;&#x89E3;&#x6790;XML&#x7684;&#x65B9;&#x5F0F;&#x4E0D;&#x4E00;&#x81F4;, &#x9700;&#x8981;&#x91CD;&#x590D;&#x7F16;&#x5199;&#x5F88;&#x591A;&#x4EE3;&#x7801;</li>
+<li>&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x548C;&#x5BA2;&#x6237;&#x7AEF;&#x89E3;&#x6790;XML&#x82B1;&#x8D39;&#x8D44;&#x6E90;&#x548C;&#x65F6;&#x95F4;</li>
+</ol>
+<h1 id="json-&#x683C;&#x5F0F;">JSON &#x683C;&#x5F0F;</h1>
+<ul>
+<li>JSON &#x6307;&#x7684;&#x662F; JavaScript &#x5BF9;&#x8C61;&#x8868;&#x793A;&#x6CD5;&#xFF08;JavaScript Object Notation&#xFF09;</li>
+<li>JSON &#x662F;&#x8F7B;&#x91CF;&#x7EA7;&#x7684;&#x6587;&#x672C;&#x6570;&#x636E;&#x4EA4;&#x6362;&#x683C;&#x5F0F;</li>
+<li>JSON &#x72EC;&#x7ACB;&#x4E8E;&#x8BED;&#x8A00; *</li>
+<li>JSON &#x5177;&#x6709;&#x81EA;&#x6211;&#x63CF;&#x8FF0;&#x6027;&#xFF0C;&#x66F4;&#x6613;&#x7406;&#x89E3;</li>
+<li>JSON &#x4F7F;&#x7528; JavaScript &#x8BED;&#x6CD5;&#x6765;&#x63CF;&#x8FF0;&#x6570;&#x636E;&#x5BF9;&#x8C61;&#xFF0C;&#x4F46;&#x662F; JSON &#x4ECD;&#x7136;&#x72EC;&#x7ACB;&#x4E8E;&#x8BED;&#x8A00;&#x548C;&#x5E73;&#x53F0;&#x3002;JSON &#x89E3;&#x6790;&#x5668;&#x548C; JSON &#x5E93;&#x652F;&#x6301;&#x8BB8;&#x591A;&#x4E0D;&#x540C;&#x7684;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x3002;</li>
+</ul>
+<h1 id="json&#x6570;&#x636E;&#x4E3B;&#x8981;&#x5206;&#x4E24;&#x79CD;">JSON&#x6570;&#x636E;&#x4E3B;&#x8981;&#x5206;&#x4E24;&#x79CD;</h1>
+<ul>
+<li>&#x6700;&#x5916;&#x5C42;&#x662F;&#x6570;&#x7EC4;</li>
+</ul>
+<p><img src="https://www.json.org/img/array.png" alt=""></p>
+<ul>
+<li>&#x6700;&#x5916;&#x5C42;&#x662F;&#x5BF9;&#x8C61;</li>
+</ul>
+<p><img src="https://www.json.org/img/object.png" alt=""></p>
+<p>&#x6570;&#x636E;&#x7C7B;&#x578B;</p>
+<p><img src="https://www.json.org/img/value.png" alt=""></p>
+<h1 id="&#x89E3;&#x6790;json&#x6570;&#x636E;">&#x89E3;&#x6790;JSON&#x6570;&#x636E;</h1>
+<p>JS&#x5BF9;JSON&#x6570;&#x636E;&#x63D0;&#x4F9B;&#x4E86;&#x4E24;&#x79CD;&#x5904;&#x7406;&#x65B9;&#x5F0F;</p>
+<ul>
+<li>JSON&#x6570;&#x636E;&#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x6362;&#x6210;&#x5BF9;&#x8C61; JSON.parse()</li>
+<li>JSON&#x5BF9;&#x8C61;&#x8F6C;&#x6362;&#x6210;&#x5B57;&#x7B26;&#x4E32;  JSON.stringify()</li>
+</ul>
+<p>&#x793A;&#x4F8B;</p>
+<p>&#x5929;&#x6C14;&#x4FE1;&#x606F;&#x7684;JSON&#x6570;&#x636E;</p>
+<pre><code class="lang-JSON">{
+   <span class="hljs-string">&quot;data&quot;</span>: {
+       <span class="hljs-string">&quot;yesterday&quot;</span>: {
+           <span class="hljs-string">&quot;date&quot;</span>: <span class="hljs-string">&quot;18&#x65E5;&#x661F;&#x671F;&#x4E8C;&quot;</span>,
+           <span class="hljs-string">&quot;high&quot;</span>: <span class="hljs-string">&quot;&#x9AD8;&#x6E29; 25&#x2103;&quot;</span>,
+           <span class="hljs-string">&quot;fx&quot;</span>: <span class="hljs-string">&quot;&#x5357;&#x98CE;&quot;</span>,
+           <span class="hljs-string">&quot;low&quot;</span>: <span class="hljs-string">&quot;&#x4F4E;&#x6E29; 21&#x2103;&quot;</span>,
+           <span class="hljs-string">&quot;fl&quot;</span>: <span class="hljs-string">&quot;&lt;![CDATA[&lt;3&#x7EA7;]]&gt;&quot;</span>,
+           <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;&#x5C0F;&#x96E8;&quot;</span>
+       },
+       <span class="hljs-string">&quot;city&quot;</span>: <span class="hljs-string">&quot;&#x5E38;&#x5DDE;&quot;</span>,
+       <span class="hljs-string">&quot;forecast&quot;</span>: [{
+           <span class="hljs-string">&quot;date&quot;</span>: <span class="hljs-string">&quot;19&#x65E5;&#x661F;&#x671F;&#x4E09;&quot;</span>,
+           <span class="hljs-string">&quot;high&quot;</span>: <span class="hljs-string">&quot;&#x9AD8;&#x6E29; 28&#x2103;&quot;</span>,
+           <span class="hljs-string">&quot;fengli&quot;</span>: <span class="hljs-string">&quot;&lt;![CDATA[&lt;3&#x7EA7;]]&gt;&quot;</span>,
+           <span class="hljs-string">&quot;low&quot;</span>: <span class="hljs-string">&quot;&#x4F4E;&#x6E29; 23&#x2103;&quot;</span>,
+           <span class="hljs-string">&quot;fengxiang&quot;</span>: <span class="hljs-string">&quot;&#x897F;&#x5317;&#x98CE;&quot;</span>,
+           <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;&#x5C0F;&#x96E8;&quot;</span>
+       }, {
+           <span class="hljs-string">&quot;date&quot;</span>: <span class="hljs-string">&quot;20&#x65E5;&#x661F;&#x671F;&#x56DB;&quot;</span>,
+           <span class="hljs-string">&quot;high&quot;</span>: <span class="hljs-string">&quot;&#x9AD8;&#x6E29; 25&#x2103;&quot;</span>,
+           <span class="hljs-string">&quot;fengli&quot;</span>: <span class="hljs-string">&quot;&lt;![CDATA[&lt;3&#x7EA7;]]&gt;&quot;</span>,
+           <span class="hljs-string">&quot;low&quot;</span>: <span class="hljs-string">&quot;&#x4F4E;&#x6E29; 21&#x2103;&quot;</span>,
+           <span class="hljs-string">&quot;fengxiang&quot;</span>: <span class="hljs-string">&quot;&#x4E1C;&#x5357;&#x98CE;&quot;</span>,
+           <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;&#x5927;&#x96E8;&quot;</span>
+       }, {
+           <span class="hljs-string">&quot;date&quot;</span>: <span class="hljs-string">&quot;21&#x65E5;&#x661F;&#x671F;&#x4E94;&quot;</span>,
+           <span class="hljs-string">&quot;high&quot;</span>: <span class="hljs-string">&quot;&#x9AD8;&#x6E29; 27&#x2103;&quot;</span>,
+           <span class="hljs-string">&quot;fengli&quot;</span>: <span class="hljs-string">&quot;&lt;![CDATA[4-5&#x7EA7;]]&gt;&quot;</span>,
+           <span class="hljs-string">&quot;low&quot;</span>: <span class="hljs-string">&quot;&#x4F4E;&#x6E29; 20&#x2103;&quot;</span>,
+           <span class="hljs-string">&quot;fengxiang&quot;</span>: <span class="hljs-string">&quot;&#x4E1C;&#x5317;&#x98CE;&quot;</span>,
+           <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;&#x5C0F;&#x96E8;&quot;</span>
+       }, {
+           <span class="hljs-string">&quot;date&quot;</span>: <span class="hljs-string">&quot;22&#x65E5;&#x661F;&#x671F;&#x516D;&quot;</span>,
+           <span class="hljs-string">&quot;high&quot;</span>: <span class="hljs-string">&quot;&#x9AD8;&#x6E29; 27&#x2103;&quot;</span>,
+           <span class="hljs-string">&quot;fengli&quot;</span>: <span class="hljs-string">&quot;&lt;![CDATA[&lt;3&#x7EA7;]]&gt;&quot;</span>,
+           <span class="hljs-string">&quot;low&quot;</span>: <span class="hljs-string">&quot;&#x4F4E;&#x6E29; 21&#x2103;&quot;</span>,
+           <span class="hljs-string">&quot;fengxiang&quot;</span>: <span class="hljs-string">&quot;&#x5317;&#x98CE;&quot;</span>,
+           <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;&#x591A;&#x4E91;&quot;</span>
+       }, {
+           <span class="hljs-string">&quot;date&quot;</span>: <span class="hljs-string">&quot;23&#x65E5;&#x661F;&#x671F;&#x5929;&quot;</span>,
+           <span class="hljs-string">&quot;high&quot;</span>: <span class="hljs-string">&quot;&#x9AD8;&#x6E29; 29&#x2103;&quot;</span>,
+           <span class="hljs-string">&quot;fengli&quot;</span>: <span class="hljs-string">&quot;&lt;![CDATA[&lt;3&#x7EA7;]]&gt;&quot;</span>,
+           <span class="hljs-string">&quot;low&quot;</span>: <span class="hljs-string">&quot;&#x4F4E;&#x6E29; 23&#x2103;&quot;</span>,
+           <span class="hljs-string">&quot;fengxiang&quot;</span>: <span class="hljs-string">&quot;&#x4E1C;&#x98CE;&quot;</span>,
+           <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;&#x6674;&quot;</span>
+       }],
+       <span class="hljs-string">&quot;ganmao&quot;</span>: <span class="hljs-string">&quot;&#x5404;&#x9879;&#x6C14;&#x8C61;&#x6761;&#x4EF6;&#x9002;&#x5B9C;&#xFF0C;&#x65E0;&#x660E;&#x663E;&#x964D;&#x6E29;&#x8FC7;&#x7A0B;&#xFF0C;&#x53D1;&#x751F;&#x611F;&#x5192;&#x673A;&#x7387;&#x8F83;&#x4F4E;&#x3002;&quot;</span>,
+       <span class="hljs-string">&quot;wendu&quot;</span>: <span class="hljs-string">&quot;24&quot;</span>
+   },
+   <span class="hljs-string">&quot;status&quot;</span>: <span class="hljs-number">1000</span>,
+   <span class="hljs-string">&quot;desc&quot;</span>: <span class="hljs-string">&quot;OK&quot;</span>
+}
+</code></pre>
+<h1 id="json&#x5BF9;&#x8C61;&#x8F6C;&#x5B57;&#x7B26;&#x4E32;">JSON&#x5BF9;&#x8C61;&#x8F6C;&#x5B57;&#x7B26;&#x4E32;</h1>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> rs = <span class="hljs-built_in">JSON</span>.stringify(obj);
+<span class="hljs-built_in">console</span>.log(rs);
+<span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">typeof</span> rs);
+</code></pre>
+<h1 id="json&#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x5BF9;&#x8C61;">JSON&#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x5BF9;&#x8C61;</h1>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> str = <span class="hljs-string">`{&quot;data&quot;:{&quot;yesterday&quot;:{&quot;date&quot;:&quot;18&#x65E5;&#x661F;&#x671F;&#x4E8C;&quot;,&quot;high&quot;:&quot;&#x9AD8;&#x6E29; 25&#x2103;&quot;,&quot;fx&quot;:&quot;&#x5357;&#x98CE;&quot;,&quot;low&quot;:&quot;&#x4F4E;&#x6E29; 21&#x2103;&quot;,&quot;fl&quot;:&quot;&lt;![CDATA[&lt;3&#x7EA7;]]&gt;&quot;,&quot;type&quot;:&quot;&#x5C0F;&#x96E8;&quot;},&quot;city&quot;:&quot;&#x5E38;&#x5DDE;&quot;,&quot;forecast&quot;:[{&quot;date&quot;:&quot;19&#x65E5;&#x661F;&#x671F;&#x4E09;&quot;,&quot;high&quot;:&quot;&#x9AD8;&#x6E29; 28&#x2103;&quot;,&quot;fengli&quot;:&quot;&lt;![CDATA[&lt;3&#x7EA7;]]&gt;&quot;,&quot;low&quot;:&quot;&#x4F4E;&#x6E29; 23&#x2103;&quot;,&quot;fengxiang&quot;:&quot;&#x897F;&#x5317;&#x98CE;&quot;,&quot;type&quot;:&quot;&#x5C0F;&#x96E8;&quot;},{&quot;date&quot;:&quot;20&#x65E5;&#x661F;&#x671F;&#x56DB;&quot;,&quot;high&quot;:&quot;&#x9AD8;&#x6E29; 25&#x2103;&quot;,&quot;fengli&quot;:&quot;&lt;![CDATA[&lt;3&#x7EA7;]]&gt;&quot;,&quot;low&quot;:&quot;&#x4F4E;&#x6E29; 21&#x2103;&quot;,&quot;fengxiang&quot;:&quot;&#x4E1C;&#x5357;&#x98CE;&quot;,&quot;type&quot;:&quot;&#x5927;&#x96E8;&quot;},{&quot;date&quot;:&quot;21&#x65E5;&#x661F;&#x671F;&#x4E94;&quot;,&quot;high&quot;:&quot;&#x9AD8;&#x6E29; 27&#x2103;&quot;,&quot;fengli&quot;:&quot;&lt;![CDATA[4-5&#x7EA7;]]&gt;&quot;,&quot;low&quot;:&quot;&#x4F4E;&#x6E29; 20&#x2103;&quot;,&quot;fengxiang&quot;:&quot;&#x4E1C;&#x5317;&#x98CE;&quot;,&quot;type&quot;:&quot;&#x5C0F;&#x96E8;&quot;},{&quot;date&quot;:&quot;22&#x65E5;&#x661F;&#x671F;&#x516D;&quot;,&quot;high&quot;:&quot;&#x9AD8;&#x6E29; 27&#x2103;&quot;,&quot;fengli&quot;:&quot;&lt;![CDATA[&lt;3&#x7EA7;]]&gt;&quot;,&quot;low&quot;:&quot;&#x4F4E;&#x6E29; 21&#x2103;&quot;,&quot;fengxiang&quot;:&quot;&#x5317;&#x98CE;&quot;,&quot;type&quot;:&quot;&#x591A;&#x4E91;&quot;},{&quot;date&quot;:&quot;23&#x65E5;&#x661F;&#x671F;&#x5929;&quot;,&quot;high&quot;:&quot;&#x9AD8;&#x6E29; 29&#x2103;&quot;,&quot;fengli&quot;:&quot;&lt;![CDATA[&lt;3&#x7EA7;]]&gt;&quot;,&quot;low&quot;:&quot;&#x4F4E;&#x6E29; 23&#x2103;&quot;,&quot;fengxiang&quot;:&quot;&#x4E1C;&#x98CE;&quot;,&quot;type&quot;:&quot;&#x6674;&quot;}],&quot;ganmao&quot;:&quot;&#x5404;&#x9879;&#x6C14;&#x8C61;&#x6761;&#x4EF6;&#x9002;&#x5B9C;&#xFF0C;&#x65E0;&#x660E;&#x663E;&#x964D;&#x6E29;&#x8FC7;&#x7A0B;&#xFF0C;&#x53D1;&#x751F;&#x611F;&#x5192;&#x673A;&#x7387;&#x8F83;&#x4F4E;&#x3002;&quot;,&quot;wendu&quot;:&quot;24&quot;},&quot;status&quot;:1000,&quot;desc&quot;:&quot;OK&quot;}`</span>
+<span class="hljs-keyword">var</span> obj = <span class="hljs-built_in">JSON</span>.parse(str);
+</code></pre>
+<p>&#x4F5C;&#x4E1A;:</p>
+<ol>
+<li>&#x89E3;&#x6790;&#x5168;&#x56FD;&#x57CE;&#x5E02;&#x5217;&#x8868;,&#x5B9E;&#x73B0;&#x4E09;&#x7EA7;&#x8054;&#x52A8;.&#x5982;&#x56FE;</li>
+</ol>
+<p><img src="https://github.com/MacMang/ZMTVue/raw/master/01.%E7%9C%81%E5%B8%82%E5%8E%BF%E4%B8%89%E7%BA%A7%E8%81%94%E5%8A%A8/%E5%9F%8E%E5%B8%82%E4%B8%89%E7%BA%A7%E8%81%94%E5%8A%A8.gif" alt=""></p>
+<ol>
+<li>&#x89E3;&#x6790;&#x5168;&#x56FD;&#x706B;&#x8F66;&#x7AD9;&#x5217;&#x8868;.&#x4EFF;&#x7167;&#x4EE5;&#x4E0B;&#x56FE;&#x7247;&#x5B9E;&#x73B0;&#x663E;&#x5F71;&#x7684;&#x529F;&#x80FD;.</li>
+</ol>
+<p><img src="https://upload-images.jianshu.io/upload_images/3020765-19efdc164e82f5c5.png?imageMogr2/auto-orient/strip|imageView2/2/w/316/format/webp" alt=""></p>
+
                                 
                                 </section>
                             
@@ -585,7 +775,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"02.JSON和XML","level":"1.4.2","depth":2,"next":{"title":"03.AJAX","level":"1.4.3","depth":2,"path":"高阶/04.AJAX.md","ref":"高阶/04.AJAX.md","articles":[]},"previous":{"title":"01.Cookie和存储","level":"1.4.1","depth":2,"path":"高阶/02.Cookie和存储.md","ref":"高阶/02.Cookie和存储.md","articles":[]},"dir":"neutral"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"高阶/03.JSON和XML.md","mtime":"2019-09-01T00:59:54.997Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-22T23:37:03.495Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"02.JSON和XML","level":"1.4.2","depth":2,"next":{"title":"03.AJAX","level":"1.4.3","depth":2,"path":"高阶/04.AJAX.md","ref":"高阶/04.AJAX.md","articles":[]},"previous":{"title":"01.Cookie和存储","level":"1.4.1","depth":2,"path":"高阶/02.Cookie和存储.md","ref":"高阶/02.Cookie和存储.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"高阶/03.JSON和XML.md","mtime":"2019-09-23T15:17:19.315Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-23T15:17:32.536Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
