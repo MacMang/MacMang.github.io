@@ -832,6 +832,51 @@ matches = pattern2.exec(text);
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> r = <span class="hljs-regexp">/\w+/g</span>;
 <span class="hljs-keyword">var</span> a = s.match(r);  <span class="hljs-comment">//&#x8FD4;&#x56DE;&#x6570;&#x7EC4;[&quot;how&quot;,&quot;are&quot;,&quot;you&quot;]</span>
 </code></pre>
+<p>&#x7EC3;&#x4E60;</p>
+<ol>
+<li><p>&#x6B63;&#x5219;&#x5224;&#x65AD;&#x662F;&#x5426;&#x4E3A;&#x6570;&#x5B57;&#x4E0E;&#x5B57;&#x6BCD;&#x7684;&#x6DF7;&#x5408;</p>
+<ul>
+<li>&#x8981;&#x6C42; &#x4E0D;&#x80FD;&#x5C0F;&#x4E8E;12&#x4F4D;&#xFF0C;&#x4E14;&#x5FC5;&#x987B;&#x4E3A;&#x5B57;&#x6BCD;&#x548C;&#x6570;&#x5B57;&#x7684;&#x6DF7;&#x5408;&#x3002;</li>
+</ul>
+</li>
+<li><p>&#x5C06;&#x963F;&#x62C9;&#x4F2F;&#x6570;&#x5B57;&#x66FF;&#x6362;&#x4E3A;&#x4E2D;&#x6587;&#x5927;&#x5199;&#x5F62;&#x5F0F;</p>
+<ul>
+<li>&#x5C06;123&#x66FF;&#x6362;&#x6210;&#x4E00;&#x4E8C;&#x4E09;&#x3002;</li>
+</ul>
+</li>
+<li><p>&#x7528;&#x6B63;&#x5219;&#x83B7;&#x5F97;&#x6307;&#x5B9A;&#x6807;&#x7B7E;&#x7684;&#x5185;&#x5BB9;
+ &#x8981;&#x6C42;&#x5339;&#x914D;item&#x91CC;&#x7684;title&#x800C;&#x4E0D;&#x5339;&#x914D;channel&#x91CC;&#x7684;title&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">channel</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>&#x84DD;&#x8272;&#x7406;&#x60F3;<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">channel</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">item</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>&#x754C;&#x9762;&#x8BBE;&#x8BA1;&#x6D4B;&#x8BD5;&#x89C4;&#x8303;<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">item</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">item</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>&#x300A;&#x53E4;&#x5178;&#x5199;&#x5B9E;&#x7F8E;&#x5973;&#x300B;&#x6F2B;&#x753B;&#x6559;&#x7A0B;<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">item</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">item</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>&#x5B89;&#x8FDC;&#x2015;&#x2015;&#x6D88;&#x5931;&#x7684;&#x5149;&#x5E74;<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">item</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">item</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>asp.net 2.0&#x591A;&#x8BED;&#x8A00;&#x7F51;&#x7AD9;&#x89E3;&#x51B3;&#x65B9;&#x6848;<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">item</span>&gt;</span>
+</code></pre>
+</li>
+<li><p>&#x5339;&#x914D;&#x94FE;&#x63A5;&#x7684;&#x6587;&#x5B57;</p>
+<pre><code class="lang-html">&#x4EE3;&#x7801;&#xFF1A;<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&gt;&#x8FD9;&#x91CC;&#x8981;&#x4FDD;&#x5B58;&lt;/a&gt;&#xFF0C;&#x53EA;&#x4FDD;&#x5B58;&#x94FE;&#x63A5;&#x7684;&#x6587;&#x672C;&#x5185;&#x5BB9;&#xFF0C;&#x6807;&#x7B7E;&#x4FE1;&#x606F;&#x5220;&#x6389;&#x3002;
+</span></span></code></pre>
+</li>
+<li><p>&#x6B63;&#x5219;&#x9A8C;&#x8BC1;&#x65E5;&#x671F;&#x683C;&#x5F0F;
+yyyy-mm-dd&#x683C;&#x5F0F;</p>
+</li>
+<li><p>&#x8EAB;&#x4EFD;&#x8BC1;&#x53F7;&#x7801;&#x7684;&#x5339;&#x914D;
+&#x8EAB;&#x4EFD;&#x8BC1;&#x53F7;&#x7801;&#x53EF;&#x4EE5;&#x662F;15&#x4F4D;&#x6216;&#x8005;&#x662F;18&#x4F4D;&#xFF0C;&#x5176;&#x4E2D;&#x6700;&#x540E;&#x4E00;&#x4F4D;&#x53EF;&#x4EE5;&#x662F;X&#x3002;&#x5176;&#x5B83;&#x5168;&#x662F;&#x6570;&#x5B57;&#xFF0C;&#x6B63;&#x5219;&#x5982;&#x4E0B;&#xFF1A;</p>
+</li>
+<li><p>&#x7528;&#x6237;&#x540D;&#x6B63;&#x5219;
+&#x7528;&#x4E8E;&#x7528;&#x6237;&#x540D;&#x6CE8;&#x518C;&#xFF0C;&#xFF0C;&#x7528;&#x6237;&#x540D;&#x53EA; &#x80FD;&#x7528; &#x4E2D;&#x6587;&#x3001;&#x82F1;&#x6587;&#x3001;&#x6570;&#x5B57;&#x3001;&#x4E0B;&#x5212;&#x7EBF;&#x3001;4-16&#x4E2A;&#x5B57;&#x7B26;&#x3002;</p>
+</li>
+</ol>
 
                                 
                                 </section>
@@ -875,7 +920,7 @@ matches = pattern2.exec(text);
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"06.正则表达式","level":"1.4.6","depth":2,"next":{"title":"07.webworker","level":"1.4.7","depth":2,"path":"高阶/08.webworker.md","ref":"高阶/08.webworker.md","articles":[]},"previous":{"title":"05.事件循环","level":"1.4.5","depth":2,"path":"高阶/06.事件循环.md","ref":"高阶/06.事件循环.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"高阶/07.正则表达式.md","mtime":"2019-09-26T01:05:35.784Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-26T01:05:49.291Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"06.正则表达式","level":"1.4.6","depth":2,"next":{"title":"07.webworker","level":"1.4.7","depth":2,"path":"高阶/08.webworker.md","ref":"高阶/08.webworker.md","articles":[]},"previous":{"title":"05.事件循环","level":"1.4.5","depth":2,"path":"高阶/06.事件循环.md","ref":"高阶/06.事件循环.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"高阶/07.正则表达式.md","mtime":"2019-09-26T09:32:18.094Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-26T09:32:35.943Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
